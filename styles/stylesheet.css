@@ -14,7 +14,8 @@
     grid-template-columns: 320px 198px 153px 50px;
     grid-template-rows: 414px 130px 155px 20px;
     gap: 9px;
-    background-color: #000
+    background-color: #000;
+    box-shadow: -10px 10px 10px black;
   }
 
   .red{
@@ -77,4 +78,22 @@
 
   .box9 {
     grid-area: 3 / 4 / 5 / 5
+  }
+
+  @media (max-width: 700px){
+    .flex-container {
+      justify-content: center;
+      /* width: 275px; */
+      height: 500px;
+    }
+
+    .grid-container {
+      height: 298.4px;
+      width: 269px;
+      display: grid;
+      grid-template-columns: 128px 79.2px 31.2px 20px;
+      grid-template-rows: 165.6px 52px 62px 8px;
+      gap: 3.6px;
+      background-color: #000
+    }
   }
